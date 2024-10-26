@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="characters.css" />
+    <link rel="stylesheet" href="core.css" />
+
+    <script defer src="game.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="inner_header">
+          <a href="../index.html">
+            <div class="logotype">Cars</div>
+            <div class="logotype filter">Cars</div>
+          </a>
+          <ul class="menu">
+            <li class="menu_link">
+              <a href="characters.html">Карточки</a>
+            </li>
+            <li class="menu_link">
+              <a href="game.html">Игра</a>
+            </li>
+            <button class="btn" id="btn-get">Купить Авто</button>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal_dialog">
+        <div class="modal_content">
+          <form action="#">
+            <div class="modal_close">&times;</div>
+            <div class="modal-top">
+              <div class="modal_title-box">
+                <div class="modal_title">Какую машину хотите</div>
+                <div class="wallet-icon">
+                  <img src="images/wallet-icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="hr"></div>
+              <div class="line">
+                <div>
+                  <span class="city"></span>
+                  <span class="temp"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form_items">
+              <div class="form_item">
+                <label for="number" class="input_label">Номер телефона</label>
+                <input
+                  id="number"
+                  required
+                  placeholder="Ваш номер телефона"
+                  name="phone_number"
+                  type="text"
+                  class="modal_input mini"
+                />
+              </div>
+              <div class="form_item">
+                <label for="gmail" class="input_label">Почта G-mail</label>
+                <input
+                  id="gmail"
+                  required
+                  placeholder="Ваша почта"
+                  name="gmail"
+                  type="email"
+                  class="modal_input mini"
+                />
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn_dark btn_min" id="validate-btn">
+                Отправить заявку на покупку
+              </button>
+              <div class="arrow-icon">
+                <img src="images/count-arrow-icon.svg" alt="" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="characters.js"></script>
+    <script src="main.js"></script>
+    <script src="modal.js"></script>
+    <canvas id="c" tabindex="0"></canvas>
+  </body>
+</html>
